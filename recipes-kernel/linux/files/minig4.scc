@@ -1,0 +1,9 @@
+kconf hardware minig4.cfg
+
+include cfg/usb-mass-storage.scc
+include cfg/fs/vfat.scc
+
+include cfg/dmaengine.scc
+
+kconf hardware minig4-user-config.cfg
+include minig4-user-patches.scc

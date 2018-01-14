@@ -1,0 +1,9 @@
+define KMACHINE minig4
+
+define KARCH powerpc
+
+include ktypes/preempt-rt/preempt-rt.scc
+define KTYPE standard/base
+branch minig4
+
+include minig4.scc
