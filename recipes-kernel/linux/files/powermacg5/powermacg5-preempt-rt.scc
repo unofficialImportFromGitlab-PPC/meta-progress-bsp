@@ -1,0 +1,9 @@
+define KMACHINE powermacg5
+
+define KARCH powerpc64
+
+include ktypes/preempt-rt/preempt-rt.scc
+define KTYPE standard/base
+branch powermacg5
+
+include powermacg5.scc
