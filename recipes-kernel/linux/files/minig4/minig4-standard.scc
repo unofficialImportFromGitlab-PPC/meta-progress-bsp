@@ -2,8 +2,8 @@ define KMACHINE minig4
 
 define KARCH powerpc
 
-include ktypes/standard/standard.scc nopatch
+#include ktypes/standard/standard.scc nopatch
 define KTYPE standard/base
-branch minig4
+#branch minig4
 
-include minig4.scc
+#include minig4.scc

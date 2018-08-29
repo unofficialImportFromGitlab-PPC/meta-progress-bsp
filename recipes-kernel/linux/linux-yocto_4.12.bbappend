@@ -12,7 +12,9 @@ SRC_URI += "\
             file://graphics.cfg \
             file://console-debug.cfg \
             "
-SRC_URI_append_minig4 = "file://minig4/minig4-standard.scc \
+SRC_URI_append_minig4 = "\
+            file://minig4/minig4-standard.scc \
+	    file://minig4/defconfig.cfg \
             file://minig4/pmac32.cfg \
             file://minig4/minig4-user-config.cfg \
             file://minig4/minig4-user-features.scc \
