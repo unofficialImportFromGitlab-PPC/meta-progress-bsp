@@ -54,7 +54,9 @@ require recipes-kernel/linux/linux-yocto.inc
 
 # Override SRC_URI in a copy of this recipe to point at a different source
 # tree if you do not want to build from Linus' tree.
-SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;protocol=git;branch=${KBRANCH};name=machine"
+SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;protocol=git;branch=${KBRANCH};name=machine \
+	    file://fix_strncpy_related_build_failures_with_GCC_8_1.patch\
+	    "
 
 SRC_URI_append_minig4 = "\
 	    file://minig4/minig4-standard.scc \
