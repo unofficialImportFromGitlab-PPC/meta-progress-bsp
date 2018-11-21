@@ -85,7 +85,7 @@ LINUX_VERSION_EXTENSION_append = "-custom"
 SRCREV="${AUTOREV}"
 PR = "r0"
 
-PV = "${LINUX_VERSION}.33"
+PV = "${LINUX_VERSION}.82"
 
 PR := "${PR}.6"
 
